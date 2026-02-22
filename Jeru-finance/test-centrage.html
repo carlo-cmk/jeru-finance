@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Centrage Modales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="padding: 20px;">
+    <h1>Test de centrage des modales</h1>
+    <p>Cliquez sur le bouton ci-dessous pour voir la modale centrée :</p>
+
+    <button onclick="openModal()" style="padding: 10px 20px; background: #27ae60; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Ouvrir Modale Test
+    </button>
+
+    <!-- Modale de test -->
+    <div id="testModal" class="service-modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fermer">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon">🧪</div>
+                <h2>Modale de Test</h2>
+            </div>
+            <div class="modal-body">
+                <p>Cette modale devrait être parfaitement centrée à l'écran, même sur mobile !</p>
+                <p>Si vous devez scroller pour la voir, il y a un problème de centrage.</p>
+                <p>Le contenu devrait apparaître directement au centre de votre écran.</p>
+            </div>
+            <button class="modal-cta" onclick="closeModal()">Fermer</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('testModal').classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('testModal').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        // Fermeture en cliquant sur le fond
+        document.getElementById('testModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Fermeture avec la touche Échap
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Test Section REJOIGNEZ-NOUS - JERU Microfinance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>JERU Microfinance</h2>
+            </div>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#rejoignez">REJOIGNEZ-NOUS</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section REJOIGNEZ-NOUS - Test -->
+    <section class="servicos" id="rejoignez" style="background: linear-gradient(135deg, #f8fffe 0%, #f0f8f5 100%); padding: 80px 0;">
+        <div class="container">
+            <h2>REJOIGNEZ-NOUS</h2>
+            <p class="servicos-subtitle">Devenez partenaire de notre mission d'inclusion financière</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 400px; gap: 50px; align-items: start;">
+                <!-- Avantages à gauche -->
+                <div class="servicos-grid" style="grid-template-columns: repeat(2, 1fr);">
+                    <div class="servico-card">
+                        <div class="servico-icon">💸</div>
+                        <h3>Taux Compétitifs</h3>
+                        <p>Accès à des taux adaptés aux petits projets et aux entrepreneurs locaux.</p>
+                    </div>
+
+                    <div class="servico-card">
+                        <div class="servico-icon">⚡</div>
+                        <h3>Processus Rapide</h3>
+                        <p>Réponse en moins de 48h et procédure simplifiée pour accélérer vos projets.</p>
+                    </div>
+
+                    <div class="servico-card">
+                        <div class="servico-icon">🔁</div>
+                        <h3>Flexibilité</h3>
+                        <p>Plans de remboursement modulables selon votre activité et vos revenus.</p>
+                    </div>
+
+                    <div class="servico-card">
+                        <div class="servico-icon">🤝</div>
+                        <h3>Accompagnement</h3>
+                        <p>Formation et coaching pour assurer la réussite de votre projet.</p>
+                    </div>
+                </div>
+
+                <!-- Formulaire à droite -->
+                <div style="background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.9) 100%), url('Image/fond.jpeg') center/cover no-repeat; padding: 35px; border-radius: 15px; box-shadow: 0 10px 40px rgba(39, 174, 96, 0.1);">
+                    <h3 style="color: #0f4d2f; margin-bottom: 10px; font-size: 22px;">Demandez un accompagnement</h3>
+                    <p style="color: #666; font-size: 14px; margin-bottom: 25px;">Remplissez ce formulaire et notre équipe vous contactera rapidement.</p>
+
+                    <form action="demande-credit.html" method="get" style="display: flex; flex-direction: column; gap: 18px;">
+                        <div style="display: flex; flex-direction: column;">
+                            <label for="join-nom" style="font-size: 13px; font-weight: 600; color: #0f4d2f; margin-bottom: 6px; text-transform: uppercase;">Votre nom *</label>
+                            <input type="text" id="join-nom" name="nom" required style="padding: 12px 15px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 14px; font-family: inherit; transition: all 0.3s ease;">
+                        </div>
+
+                        <div style="display: flex; flex-direction: column;">
+                            <label for="join-email" style="font-size: 13px; font-weight: 600; color: #0f4d2f; margin-bottom: 6px; text-transform: uppercase;">Votre e-mail *</label>
+                            <input type="email" id="join-email" name="email" required style="padding: 12px 15px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 14px; font-family: inherit; transition: all 0.3s ease;">
+                        </div>
+
+                        <div style="display: flex; flex-direction: column;">
+                            <label for="join-montant" style="font-size: 13px; font-weight: 600; color: #0f4d2f; margin-bottom: 6px; text-transform: uppercase;">Montant souhaité *</label>
+                            <input type="text" id="join-montant" name="montant" placeholder="Ex: 500 000 FC" required style="padding: 12px 15px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 14px; font-family: inherit; transition: all 0.3s ease;">
+                        </div>
+
+                        <div style="display: flex; flex-direction: column;">
+                            <label for="join-projet" style="font-size: 13px; font-weight: 600; color: #0f4d2f; margin-bottom: 6px; text-transform: uppercase;">Description du projet</label>
+                            <textarea id="join-projet" name="projet" rows="3" placeholder="Décrivez brièvement votre projet..." style="padding: 12px 15px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 14px; font-family: inherit; resize: vertical; transition: all 0.3s ease;"></textarea>
+                        </div>
+
+                        <button type="submit" style="margin-top: 15px; background: linear-gradient(135deg, #27ae60 0%, #1e8449 100%); color: white; border: none; padding: 16px 28px; border-radius: 50px; font-size: 15px; font-weight: 800; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4); transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%;">
+                            <span>📤</span> ENVOYER MA DEMANDE
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

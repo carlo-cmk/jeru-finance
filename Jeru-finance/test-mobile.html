@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Test Compatibilité Mobile - JERU Microfinance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>JERU Microfinance</h2>
+            </div>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="test" class="hero">
+        <div class="container">
+            <h1>Test de Compatibilité Mobile</h1>
+            <p>Cette page teste la compatibilité avec tous les modèles de téléphone</p>
+            <button class="btn">Test Bouton</button>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="card">
+                    <h3>Test Card 1</h3>
+                    <p>Contenu de test pour vérifier le rendu sur mobile</p>
+                </div>
+                <div class="card">
+                    <h3>Test Card 2</h3>
+                    <p>Contenu de test pour vérifier le rendu sur mobile</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Services de Test</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Service 1</h3>
+                    <p>Description du service</p>
+                    <button class="btn">En savoir plus</button>
+                </div>
+                <div class="service-card">
+                    <h3>Service 2</h3>
+                    <p>Description du service</p>
+                    <button class="btn">En savoir plus</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact de Test</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

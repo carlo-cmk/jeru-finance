@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Test Modales de Service - JERU Microfinance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>JERU Microfinance</h2>
+            </div>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section Services - Test des Modales -->
+    <section class="servicos" id="services" style="padding: 80px 0;">
+        <div class="container">
+            <h2>NOS SERVICES - TEST MODALES CENTRÉES</h2>
+            <p class="servicos-subtitle">Cliquez sur "en savoir plus" pour voir les détails s'afficher centrés à l'écran</p>
+
+            <div class="servicos-grid">
+                <div class="servico-card" data-service="epargne">
+                    <div class="servico-icon">💰</div>
+                    <h3>Épargne et Compte d'Épargne</h3>
+                    <p>Développez votre épargne de manière sécurisée avec nos comptes d'épargne adaptés.</p>
+                    <a href="#" class="saiba-mais">en savoir plus →</a>
+                </div>
+
+                <div class="servico-card" data-service="agricole">
+                    <div class="servico-icon">🌾</div>
+                    <h3>Crédit Agricole</h3>
+                    <p>Financement spécialisé pour les agriculteurs et projets agricoles.</p>
+                    <a href="#" class="saiba-mais">en savoir plus →</a>
+                </div>
+
+                <div class="servico-card" data-service="investissement">
+                    <div class="servico-icon">📈</div>
+                    <h3>Investissement et Développement</h3>
+                    <p>Financement pour vos projets d'investissement et de développement.</p>
+                    <a href="#" class="saiba-mais">en savoir plus →</a>
+                </div>
+
+                <div class="servico-card" data-service="formation">
+                    <div class="servico-icon">🎓</div>
+                    <h3>Formation et Accompagnement</h3>
+                    <p>Programme de formation pour entrepreneurs et porteurs de projets.</p>
+                    <a href="#" class="saiba-mais">en savoir plus →</a>
+                </div>
+
+                <div class="servico-card" data-service="jeunes">
+                    <div class="servico-icon">👥</div>
+                    <h3>Programme Jeunes Entrepreneurs</h3>
+                    <p>Accompagnement spécial pour les jeunes entrepreneurs.</p>
+                    <a href="#" class="saiba-mais">en savoir plus →</a>
+                </div>
+
+                <div class="servico-card" data-service="durable">
+                    <div class="servico-icon">🌱</div>
+                    <h3>Finance Durable et Verte</h3>
+                    <p>Solutions de financement pour projets écologiques et durables.</p>
+                    <a href="#" class="saiba-mais">en savoir plus →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <div class="servicos-grid">
+                <div class="servico-card" data-service="epargne">
+                    <div class="servico-icon">💰</div>
+                    <h3>Épargne et Compte d'Épargne</h3>
+                    <p>Développez votre épargne de manière sécurisée avec nos comptes d'épargne adaptés.</p>
+                    <a href="#" class="saiba-mais">en savoir plus →</a>
+                </div>
+
+                <div class="servico-card" data-service="agricole">
+                    <div class="servico-icon">🌾</div>
+                    <h3>Crédit Agricole</h3>
+                    <p>Financement spécialisé pour les agriculteurs et projets agricoles.</p>
+                    <a href="#" class="saiba-mais">en savoir plus →</a>
+                </div>
+
+                <div class="servico-card" data-service="investissement">
+                    <div class="servico-icon">📈</div>
+                    <h3>Investissement et Développement</h3>
+                    <p>Financement pour vos projets d'investissement et de développement.</p>
+                    <a href="#" class="saiba-mais">en savoir plus →</a>
+                </div>
+
+                <div class="servico-card" data-service="formation">
+                    <div class="servico-icon">🎓</div>
+                    <h3>Formation et Accompagnement</h3>
+                    <p>Programme de formation pour entrepreneurs et porteurs de projets.</p>
+                    <a href="#" class="saiba-mais">en savoir plus →</a>
+                </div>
+
+                <div class="servico-card" data-service="jeunes">
+                    <div class="servico-icon">👥</div>
+                    <h3>Programme Jeunes Entrepreneurs</h3>
+                    <p>Accompagnement spécial pour les jeunes entrepreneurs.</p>
+                    <a href="#" class="saiba-mais">en savoir plus →</a>
+                </div>
+
+                <div class="servico-card" data-service="durable">
+                    <div class="servico-icon">🌱</div>
+                    <h3>Finance Durable et Verte</h3>
+                    <p>Solutions de financement pour projets écologiques et durables.</p>
+                    <a href="#" class="saiba-mais">en savoir plus →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modale de service -->
+    <div id="serviceModal" class="service-modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fermer">&times;</button>
+            <div class="modal-header">
+                <div id="modalIcon" class="modal-icon"></div>
+                <h2 id="modalTitle"></h2>
+            </div>
+            <div id="modalBody" class="modal-body"></div>
+            <button class="modal-cta" onclick="window.location.href='demande-credit.html'">
+                FAIRE UNE DEMANDE DE CRÉDIT
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
